@@ -1,22 +1,22 @@
 .btn {
-  width: 100%;
+	width: 100%;
 
-  padding: 8px;
+	padding: 8px;
 
-  cursor: pointer;
+	cursor: pointer;
 
-  transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
 
-  color: var(--white-color);
-  border: 0;
-  background-color: var(--blue-color);
+	color: var(--white-color);
+	border: 0;
+	background-color: var(--blue-color);
 
-  font-family: var(--ff-main);
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.57rem;
+	font-family: var(--ff-main);
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.57rem;
 
-  &:hover {
-    background-color: #009efd;
-  }
+	&:hover {
+		background-color: #009EFD;
+	}
 }

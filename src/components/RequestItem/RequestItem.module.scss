@@ -1,73 +1,79 @@
 .item {
-  position: relative;
+	position: relative;
 
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  margin-bottom: 14px;
-  padding: 12px;
+	margin-bottom: 14px;
+	padding: 12px;
 
-  cursor: pointer;
+	cursor: pointer;
 
-  border: var(--primary-border);
+	transition: background-color 0.2s ease-in-out;
 
-  &__info {
-    display: flex;
-  }
+	border: var(--primary-border);
 
-  &__description {
-    margin-top: 5px;
+	&:hover {
+		background-color: #F5F5F5;
+	}
 
-    color: var(--blue-color);
+	&__info {
+		display: flex;
+	}
 
-    font-size: 0.85rem;
-    mix-blend-mode: normal;
-  }
+	&__description {
+		margin-top: 5px;
 
-  &__type {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+		color: var(--blue-color);
 
-    padding: 0 6px;
+		font-size: 0.85rem;
+		mix-blend-mode: normal;
+	}
 
-    cursor: pointer;
+	&__type {
+		position: absolute;
+		top: 5px;
+		right: 5px;
 
-    color: var(--white-color);
-    border-radius: var(--radius);
-    background-color: var(--blue-color);
+		padding: 0 6px;
 
-    font-size: 0.71rem;
-    font-weight: 800;
+		cursor: pointer;
 
-    line-height: 160%;
-  }
+		color: var(--white-color);
+		border-radius: var(--radius);
+		background-color: var(--blue-color);
+
+		font-size: 0.71rem;
+		font-weight: 800;
+
+		line-height: 160%;
+	}
 }
 
 .info__image {
-  width: 54px;
-  height: 54px;
+	width: 54px;
+	height: 54px;
 
-  margin-right: 10px;
+	margin-right: 10px;
 
-  border-radius: 50%;
-  object-fit: fill;
+	border-radius: 50%;
+	object-fit: fill;
 }
 
 .info__text {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  .text__name {
-    font-weight: 500;
-    line-height: 129%;
-  }
+	.text__name {
+		font-weight: 500;
+		line-height: 129%;
+	}
 
-  .text__location {
-    color: var(--gray-color);
+	.text__location {
+		color: var(--gray-color);
 
-    font-size: 0.85rem;
-    font-weight: 500;
-    line-height: 167%;
-  }
+		font-size: 0.85rem;
+		font-weight: 500;
+		line-height: 167%;
+	}
 }
