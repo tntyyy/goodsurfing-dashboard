@@ -12,7 +12,7 @@ const Container: FC<ContainerProps> = ({ title, notification, children }) => {
   return (
     <div className={styles.container}>
       <ContainerTitle title={title} notification={notification} />
-      {children}
+      <div className={styles.container__content}>{children}</div>
     </div>
   );
 };
