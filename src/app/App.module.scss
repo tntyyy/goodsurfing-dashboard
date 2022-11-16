@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 80px;
+
+  &__item {
+    align-self: center;
+    flex: 1;
+  }
+}
