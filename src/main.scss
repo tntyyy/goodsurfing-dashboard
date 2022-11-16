@@ -18,12 +18,12 @@ form,
 footer,
 header,
 nav {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	vertical-align: baseline;
+  vertical-align: baseline;
 
-	border: 0;
+  border: 0;
 }
 
 article,
@@ -37,11 +37,11 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
