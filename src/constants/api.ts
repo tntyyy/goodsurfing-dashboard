@@ -1,4 +1,4 @@
-export const baseUrl = "http://localhost:3001/";
+export const baseUrl = "https://6266a4aa63e0f38256850243.mockapi.io/";
 
 export enum ApiEndpoints {
   REQUESTS = "requests",
