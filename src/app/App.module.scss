@@ -1,13 +1,13 @@
 .container {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 
-	padding: 80px;
+  padding: 80px;
 
-	&__item {
-		flex: 1;
+  &__item {
+    flex: 1;
 
-		max-width: 270px;
-	}
+    max-width: 270px;
+  }
 }
