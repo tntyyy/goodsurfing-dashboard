@@ -1,4 +1,5 @@
 @import "https://fonts.fontstorage.com/import/lato.css";
+@import "react-calendar/dist/Calendar.css";
 
 html,
 body,
@@ -66,4 +67,215 @@ body {
 
   font-family: var(--ff-main);
   font-size: 1rem;
+}
+
+// calendar
+
+/* stylelint-disable */
+
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+
+  border: 0;
+  background: white;
+
+  font-family: var(--ff-main) !important;
+  line-height: 1.125em;
+}
+
+.react-calendar--doubleView {
+  width: 700px;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer {
+  display: flex;
+
+  margin: -0.5em;
+}
+
+.react-calendar--doubleView .react-calendar__viewContainer > * {
+  width: 50%;
+  margin: 0.5em;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *::before,
+.react-calendar *::after {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+
+  border: 0;
+  outline: none;
+}
+
+.react-calendar button:enabled:hover {
+  cursor: pointer;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.react-calendar__navigation button {
+  min-width: 38px;
+  height: 30px;
+
+  background: none;
+}
+
+.react-calendar__navigation button:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+
+.react-calendar__month-view__weekNumbers .react-calendar__tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #757575;
+}
+
+.react-calendar__year-view .react-calendar__tile,
+.react-calendar__decade-view .react-calendar__tile,
+.react-calendar__century-view .react-calendar__tile {
+  padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 10px 6.6667px;
+
+  text-align: center;
+
+  background: none;
+
+  line-height: 16px;
+
+  abbr {
+    font-family: Lato;
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+
+.react-calendar__tile:disabled {
+  color: #c3c8c8;
+  background-color: var(--white-color);
+
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__tile--active {
+  color: white;
+  background: #006edc;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+  text-transform: lowercase;
+
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 14px;
+}
+
+.react-calendar__month-view__days__day {
+  border-right: 1px solid #f6f6f6 !important;
+  border-bottom: 1px solid #f6f6f6 !important;
+}
+
+.react-calendar__tile--now {
+  background: #ecf1f4;
+
+  abbr {
+    color: var(--blue-color);
+
+    font-weight: 600;
+  }
+}
+
+.react-calendar__month-view__days__day--weekend {
+  abbr {
+    color: var(--black-color);
+  }
+}
+
+.react-calendar__month-view__days__day--weekend:disabled {
+  abbr {
+    color: #c3c8c8;
+  }
+}
+
+.react-calendar__month-view__days__day {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+}
+
+.react-calendar__navigation__label__labelText {
+  color: #8494a1;
+
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  mix-blend-mode: normal;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: white;
 }

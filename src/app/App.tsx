@@ -22,9 +22,9 @@ const App: FC = () => {
         </Container>
       </div>
       <div className={styles.container__item}>
-          <Container title={"Календарь"}>
-              <CalendarContainer />
-          </Container>
+        <Container title={"Календарь"}>
+          <CalendarContainer />
+        </Container>
       </div>
       <div className={styles.container__item}>
         <Container title={"Уведомления"}>
