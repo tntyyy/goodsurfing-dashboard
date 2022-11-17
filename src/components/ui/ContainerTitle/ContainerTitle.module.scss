@@ -1,27 +1,27 @@
 .container {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-	padding: 14px 20px;
+  padding: 14px 20px;
 
-	border-bottom: var(--primary-border);
+  border-bottom: var(--primary-border);
 
-	.title {
-		font-size: 1.285rem;
-		font-weight: 600;
-	}
+  .title {
+    font-size: 1.285rem;
+    font-weight: 600;
+  }
 
-	div {
-		display: flex;
-		align-items: center;
-		gap: 5px;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 
-		span {
-			cursor: pointer;
+    span {
+      cursor: pointer;
 
-			color: var(--blue-color);
+      color: var(--blue-color);
 
-			font-weight: 700;
-		}
-	}
+      font-weight: 700;
+    }
+  }
 }

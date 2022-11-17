@@ -1,31 +1,30 @@
 .item {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	padding: 13px 0;
+  cursor: pointer;
 
-	cursor: pointer;
+  &__title {
+    color: var(--blue-color);
 
-	&__title {
-		color: var(--blue-color);
+    font-weight: 700;
+    line-height: 129%;
+  }
 
-		font-weight: 700;
-		line-height: 129%;
-	}
+  &__date {
+    color: var(--gray-color);
 
-	&__date {
-		color: var(--gray-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 133%;
+  }
 
-		font-size: 0.85rem;
-		line-height: 133%;
-	}
+  &__description {
+    margin-top: 6px;
 
-	&__description {
-		margin-top: 6px;
+    color: var(--black-color);
 
-		color: var(--black-color);
-
-		font-size: 0.85rem;
-		line-height: 133%;
-	}
+    font-size: 0.85rem;
+    line-height: 133%;
+  }
 }

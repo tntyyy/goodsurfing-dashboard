@@ -1,0 +1,32 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 45px;
+
+  &__item {
+    padding: 15px 0;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    border-bottom: var(--primary-border);
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}

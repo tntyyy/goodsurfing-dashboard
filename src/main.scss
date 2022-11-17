@@ -20,12 +20,12 @@ form,
 footer,
 header,
 nav {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	vertical-align: baseline;
+  vertical-align: baseline;
 
-	border: 0;
+  border: 0;
 }
 
 article,
@@ -39,31 +39,31 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-	--black-color: #212121;
-	--blue-color: #3DABF7;
-	--white-color: #FFF;
-	--gray-color: #8494A1;
-	--ff-main: "Lato";
-	--shadow: 0 5px 20px rgb(14 29 39 / 5%);
-	--radius: 3px;
-	--primary-border: 1px solid #DFE6EB;
-	font-size: 14px;
+  --black-color: #212121;
+  --blue-color: #3dabf7;
+  --white-color: #fff;
+  --gray-color: #8494a1;
+  --ff-main: "Lato";
+  --shadow: 0 5px 20px rgb(14 29 39 / 5%);
+  --radius: 3px;
+  --primary-border: 1px solid #dfe6eb;
+  font-size: 14px;
 }
 
 body {
-	color: var(--black-color);
-	background: #FAFCFE;
+  color: var(--black-color);
+  background: #fafcfe;
 
-	font-family: var(--ff-main);
-	font-size: 1rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
 }
