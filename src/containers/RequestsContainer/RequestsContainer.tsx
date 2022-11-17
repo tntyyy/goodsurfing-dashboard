@@ -4,14 +4,23 @@ import Button from "@/components/ui/Button/Button";
 import RequestItem from "@/components/RequestItem/RequestItem";
 import { useAppDispatch, useAppSelector } from "@/hooks/redux";
 import { fetchRequests } from "@/store/reducers/requests/actionCreators";
+import SpinnerLoading from "@/components/ui/SpinnerLoading/SpinnerLoading";
 
 const RequestsContainer: FC = () => {
   const dispatch = useAppDispatch();
-  const { requests } = useAppSelector((state) => state.request);
+  const { requests, isLoading } = useAppSelector((state) => state.request);
 
   useEffect(() => {
     dispatch(fetchRequests());
   }, []);
+
+  if (isLoading) {
+    return (
+      <div className={styles.spinner}>
+        <SpinnerLoading />
+      </div>
+    );
+  }
 
   return (
     <div className={styles.container}>
