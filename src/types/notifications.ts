@@ -16,6 +16,7 @@ export interface IReview {
 }
 
 export interface INotification {
+  id: string;
   type: NotificationTypes;
   content: INews | IReview;
 }

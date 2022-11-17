@@ -28,7 +28,7 @@ export const notificationSlice = createSlice({
       action: PayloadAction<INotification[]>
     ) {
       return {
-        isLoading: true,
+        isLoading: false,
         error: "",
         notifications: action.payload,
       };
