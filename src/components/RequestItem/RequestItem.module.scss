@@ -19,6 +19,7 @@
 
 	&__info {
 		display: flex;
+		align-items: center;
 	}
 
 	&__description {
@@ -51,6 +52,8 @@
 }
 
 .info__image {
+	align-self: flex-start;
+
 	width: 54px;
 	height: 54px;
 
@@ -65,6 +68,9 @@
 	flex-direction: column;
 
 	.text__name {
+		width: 90%;
+
+		font-size: 1.1rem;
 		font-weight: 500;
 		line-height: 129%;
 	}
