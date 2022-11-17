@@ -207,8 +207,7 @@ body {
 }
 
 .react-calendar__tile--active {
-  color: white;
-  background: #006edc;
+  color: var(--blue-color) !important;
 }
 
 .react-calendar--selectRange .react-calendar__tile--hover {
@@ -249,6 +248,13 @@ body {
 .react-calendar__month-view__days__day--weekend {
   abbr {
     color: var(--black-color);
+  }
+}
+
+.react-calendar__month-view__days__day--weekend.react-calendar__tile--active {
+  background-color: var(--white-color) !important;
+  abbr {
+    color: var(--blue-color);
   }
 }
 
