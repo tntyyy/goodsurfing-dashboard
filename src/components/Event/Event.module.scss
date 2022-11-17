@@ -1,0 +1,39 @@
+.event {
+	display: flex;
+	align-items: flex-start;
+
+	padding: 15px 0;
+
+	border-bottom: var(--primary-border);
+
+	&__image {
+		width: 25px;
+		height: 25px;
+		margin-right: 10px;
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+
+	&__name {
+		font-weight: 500;
+		line-height: 129%;
+	}
+
+	&__location {
+		color: var(--gray-color);
+
+		font-size: 0.85rem;
+		line-height: 167%;
+	}
+
+	&__date {
+		color: var(--blue-color);
+
+		font-size: 0.85rem;
+		line-height: 167%;
+		mix-blend-mode: normal;
+	}
+}

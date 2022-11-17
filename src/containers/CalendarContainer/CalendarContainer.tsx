@@ -3,8 +3,17 @@ import styles from "./CalendarContainer.module.scss";
 import Calendar from "react-calendar";
 import ArrowNext from "@/components/ui/CalendarArrows/ArrowNext";
 import ArrowPrev from "@/components/ui/CalendarArrows/ArrowPrev";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { fetchEvents } from "@/store/reducers/events/actionCreators";
+import SpinnerLoading from "@/components/ui/SpinnerLoading/SpinnerLoading";
+import EventsContainer from "@/containers/EventsContainer/EventsContainer";
+import Button from "@/components/ui/Button/Button";
 
 const CalendarContainer: FC = () => {
+  const dispatch = useAppDispatch();
+  const { notifications, isLoading } = useAppSelector((state) => state.event);
+
+  const [filteredEvents, setFilteredEvents] = useState(notifications);
   const [calendarValue, setCalendarValue] = useState(new Date());
 
   const disablePastDates = (activeStartDate: Date, date: Date) => {
@@ -12,7 +21,15 @@ const CalendarContainer: FC = () => {
   };
 
   useEffect(() => {
-    console.log(calendarValue);
+    dispatch(fetchEvents());
+  }, []);
+
+  useEffect(() => {
+    setFilteredEvents(
+      notifications.filter((item) => {
+        return item.date === calendarValue.toString();
+      })
+    );
   }, [calendarValue]);
 
   return (
@@ -28,6 +45,21 @@ const CalendarContainer: FC = () => {
         }
         nextLabel={<ArrowNext />}
         prevLabel={<ArrowPrev />}
+      />
+      <div className={styles.events}>
+        {isLoading && <SpinnerLoading />}
+        {filteredEvents.length ? (
+          <EventsContainer events={filteredEvents} />
+        ) : (
+          <p className={styles.events__empty}>
+            На этот день ничего не запланировано
+          </p>
+        )}
+      </div>
+      <Button
+        text={"Посмотреть весь"}
+        isDisabled={false}
+        handleClick={() => alert("req")}
       />
     </div>
   );
