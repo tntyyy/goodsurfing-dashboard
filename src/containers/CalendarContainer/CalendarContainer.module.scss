@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	flex-direction: column;
+
+	padding: 15px 0;
+
+	.events {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		padding: 25px 0;
+
+		&__empty {
+			text-align: center;
+
+			color: var(--black-color);
+
+			font-weight: 600;
+		}
+	}
+}

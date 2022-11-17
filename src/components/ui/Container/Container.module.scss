@@ -1,8 +1,9 @@
 .container {
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+	border-radius: var(--radius);
+	background-color: var(--white-color);
+	box-shadow: var(--shadow);
 
-  &__content {
-    padding: 0 15px;
-  }
+	&__content {
+		padding: 0 15px;
+	}
 }
