@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import styles from "./RequestItem.module.scss";
 import { IRequest } from "@/types/requests";
+import { requestTypeToColor } from "@/utils/requestTypeToColor";
 
 const RequestItem: FC<IRequest> = ({
   name,
@@ -19,7 +20,12 @@ const RequestItem: FC<IRequest> = ({
         </div>
       </div>
       <p className={styles.item__description}>{description}</p>
-      <div className={styles.item__type}>{type}</div>
+      <div
+        className={styles.item__type}
+        style={{ backgroundColor: requestTypeToColor(type) }}
+      >
+        {type}
+      </div>
     </div>
   );
 };
