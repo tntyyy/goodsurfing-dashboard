@@ -12,7 +12,6 @@ const RequestsContainer: FC = () => {
 
   useEffect(() => {
     dispatch(fetchRequests());
-    console.log(requests);
   }, []);
 
   if (isLoading) {

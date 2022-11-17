@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import styles from "./App.module.scss";
 import Container from "@/components/ui/Container/Container";
 import RequestsContainer from "@/containers/RequestsContainer/RequestsContainer";
+import NotificationsContainer from "@/containers/NotificationsContainer/NotificationsContainer";
 
 const App: FC = () => {
   return (
@@ -20,7 +21,11 @@ const App: FC = () => {
         </Container>
       </div>
       <div className={styles.container__item}>calendar</div>
-      <div className={styles.container__item}>notification</div>
+      <div className={styles.container__item}>
+        <Container title={"Уведомления"}>
+          <NotificationsContainer />
+        </Container>
+      </div>
     </div>
   );
 };
