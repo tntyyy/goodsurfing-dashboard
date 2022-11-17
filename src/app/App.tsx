@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import styles from "./App.module.scss";
 import Container from "@/components/ui/Container/Container";
 import RequestsContainer from "@/containers/RequestsContainer/RequestsContainer";
-import { mockRequests } from "@/types/requests";
 
 const App: FC = () => {
   return (
@@ -17,7 +16,7 @@ const App: FC = () => {
             </div>
           }
         >
-          <RequestsContainer requests={mockRequests} />
+          <RequestsContainer />
         </Container>
       </div>
       <div className={styles.container__item}>calendar</div>

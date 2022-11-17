@@ -1,14 +1,18 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import styles from "./RequestsContainer.module.scss";
-import { IRequest } from "@/types/requests";
 import Button from "@/components/ui/Button/Button";
 import RequestItem from "@/components/RequestItem/RequestItem";
+import { useAppDispatch, useAppSelector } from "@/hooks/redux";
+import { fetchRequests } from "@/store/reducers/requests/actionCreators";
 
-interface RequestsContainerProps {
-  requests: IRequest[];
-}
+const RequestsContainer: FC = () => {
+  const dispatch = useAppDispatch();
+  const { requests } = useAppSelector((state) => state.request);
 
-const RequestsContainer: FC<RequestsContainerProps> = ({ requests }) => {
+  useEffect(() => {
+    dispatch(fetchRequests());
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.requests}>
